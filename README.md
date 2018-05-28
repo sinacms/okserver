@@ -14,5 +14,5 @@ if __name__ == '__main__':
 
 ```
 
-![](https://ws1.sinaimg.cn/large/73618a2bly1frrfyg2550j21xu17q7bl.jpg)
+![](http://ww1.sinaimg.cn/large/73618a2bly1frrfyg2550j21xu17q7bl.jpg)
 
