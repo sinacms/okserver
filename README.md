@@ -4,15 +4,24 @@
 ```
 #usage is simple
 import okserver.okserver as ok
-from model.forever_main import run_main, logger
+
+
+def main():
+    pass
+
 
 if __name__ == '__main__':
-    server = ok.Server(run_main)
-    server.set_logger(logger)
+    server = ok.Server(main)
     server.start('', 2222)
 
 
 ```
 
-![](http://ww1.sinaimg.cn/large/73618a2bly1frrfyg2550j21xu17q7bl.jpg)
+![](http://ww1.sinaimg.cn/large/73618a2bly1frs2g78jvbj217a0uc0yu.jpg)
+
+Aliyun ECS:
+1 X Intel(R) Xeon(R) Platinum 8163 CPU @ 2.50GHz
+2GB memory
+
+
 
