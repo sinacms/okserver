@@ -12,6 +12,7 @@ class Worker(object):
         res = ""
         add_head = ""
         code = 200
+        request = None
         try:
             request = HTTPRequest(data["readdata"])
         except Exception, e:

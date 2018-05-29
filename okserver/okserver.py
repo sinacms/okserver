@@ -21,6 +21,8 @@ class Server:
             self.forever_callback = forever_callback
 
     def set_logger(self, logger):
+        if None == logger:
+            logger = logging.getLogger()
         vars.logger = logger
 
     def load_modules(self):
