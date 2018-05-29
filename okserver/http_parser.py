@@ -3,8 +3,6 @@ from urlparse import parse_qs
 import re
 from StringIO import StringIO
 
-import os
-
 
 class HTTPRequest:
     def __init__(self, data):

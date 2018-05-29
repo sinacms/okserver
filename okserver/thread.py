@@ -16,7 +16,6 @@ class Thread(threading.Thread):
         self.share_object = share_object
         self.setDaemon(True)
         self.worker = Worker()
-        print '\----thread id', os.getpid(), threading.currentThread()
 
     def processer(self, args, kwargs):
         try:

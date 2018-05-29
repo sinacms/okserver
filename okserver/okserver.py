@@ -60,7 +60,6 @@ class Server:
 
         cpu_cores = cpu_count() * 2
         c = 0
-        print 'master pid: ', os.getpid()
         self.forever_callback()
         _processes = []
         while c < cpu_cores:
@@ -75,7 +74,6 @@ class Server:
             p.join()
 
     def poll_connects(self, listen_fd):
-        print '\--child pid:  ', os.getpid()
         try:
             epoll_fd = select.epoll()
             epoll_fd.register(listen_fd.fileno(), select.EPOLLIN | select.EPOLLET | select.EPOLLERR | select.EPOLLHUP)
