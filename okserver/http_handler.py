@@ -21,7 +21,7 @@ class Worker(object):
         headers = {}
         try:
             headers["Connection"] = "keep-alive"
-            controller = vars.controller_dic.get(request.controller, None)
+            controller = vars.controller_dic.get(request.controller)
             controller = getattr(controller, request.controller)
             method = getattr(controller, request.action)
             res, new_headers = method(request)

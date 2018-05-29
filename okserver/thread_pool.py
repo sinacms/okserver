@@ -1,6 +1,6 @@
 import Queue
 import threading
-from mythread import Thread
+from thread import Thread
 
 
 class ThreadPool:

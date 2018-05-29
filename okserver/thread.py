@@ -2,7 +2,7 @@ import threading
 
 import os
 
-from connect_consumer import Worker
+from http_handler import Worker
 from vars import backtrace
 import Queue
 

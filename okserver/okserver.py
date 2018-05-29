@@ -22,7 +22,7 @@ class Server:
 
     def set_logger(self, logger):
         if None == logger:
-            logger = logging.getLogger()
+            logger = logging.getLogger('okserver')
         vars.logger = logger
 
     def load_modules(self):
